@@ -26,6 +26,7 @@ services:
       - DATABASE_USERNAME=
       - DATABASE_PASSWORD=
       - AUTHENTICATION_DATABASE=strapi_dev
+      - CHOKIDAR_USEPOLLING=true
     #volumes:
       #- './backend/:/usr/src/app'
       #- '/usr/src/app/node_modules'

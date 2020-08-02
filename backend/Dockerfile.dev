@@ -2,8 +2,8 @@ FROM node:14
 WORKDIR /usr/src/app
 COPY . /usr/src/app/
 
-RUN npm i --silent 
+RUN yarn install --silent 
 
 ENV HOST 0.0.0.0
-EXPOSE 1337 
-CMD ["npm", "run", "develop"]
+EXPOSE 1337
+CMD ["yarn", "develop"]
