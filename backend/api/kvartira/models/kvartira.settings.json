@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kvartiras",
+  "info": {
+    "name": "kvartira",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "zdorov": {
+      "type": "boolean"
+    },
+    "tip": {
+      "model": "tip",
+      "via": "kvartiras"
+    },
+    "kolvo_komnat": {
+      "model": "kolvo-komnat",
+      "via": "kvartira"
+    },
+    "rajon": {
+      "model": "rajon",
+      "via": "kvartira"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tips",
+  "info": {
+    "name": "tip"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "tip": {
+      "type": "string"
+    },
+    "kvartiras": {
+      "via": "tip",
+      "collection": "kvartira"
+    },
+    "sred_1_vtor": {
+      "via": "tip",
+      "model": "sred1vtor"
+    },
+    "sred_kvadr": {
+      "via": "tip",
+      "model": "sred-kvadr"
+    }
+  }
+}

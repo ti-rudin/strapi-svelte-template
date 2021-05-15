@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sred-1-vtors",
+      "handler": "sred1vtor.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sred-1-vtors/count",
+      "handler": "sred1vtor.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sred-1-vtors/:id",
+      "handler": "sred1vtor.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sred-1-vtors",
+      "handler": "sred1vtor.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sred-1-vtors/:id",
+      "handler": "sred1vtor.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sred-1-vtors/:id",
+      "handler": "sred1vtor.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

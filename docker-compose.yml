@@ -23,8 +23,8 @@ services:
       - DATABASE_HOST=db
       - DATABASE_PORT=27017
       - DATABASE_NAME=strapi
-      - DATABASE_USERNAME=
-      - DATABASE_PASSWORD=
+      - DATABASE_USERNAME=strapi
+      - DATABASE_PASSWORD=strapi
       - AUTHENTICATION_DATABASE=strapi
     ports:
       - 1337:1337
@@ -33,15 +33,15 @@ services:
     depends_on:
       - db
 
-  frontend:
-    container_name: svelte
-    build:
-      context: ./frontend
-      dockerfile: ./Dockerfile
-    ports:
-      - "3000:3000"
-    depends_on:
-      - backend
+#  frontend:
+#    container_name: svelte
+#    build:
+#      context: ./frontend
+#      dockerfile: ./Dockerfile
+#    ports:
+#      - "3000:3000"
+#    depends_on:
+#      - backend
 
 volumes:
   db_data:

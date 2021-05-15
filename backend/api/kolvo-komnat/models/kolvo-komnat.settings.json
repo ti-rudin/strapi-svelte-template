@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kolvo_komnats",
+  "info": {
+    "name": "kolvo_komnat"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "kolvo": {
+      "type": "integer"
+    },
+    "kvartira": {
+      "via": "kolvo_komnat",
+      "model": "kvartira"
+    },
+    "sred_arifm": {
+      "via": "kolvo_komnat",
+      "model": "sred1vtor"
+    },
+    "sred_kvadr": {
+      "via": "kolvo_komnat",
+      "model": "sred-kvadr"
+    }
+  }
+}

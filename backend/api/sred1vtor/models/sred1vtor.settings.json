@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sred1vtors",
+  "info": {
+    "name": "sred_arifm",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "value": {
+      "type": "biginteger"
+    },
+    "bad_kvartirs": {
+      "type": "integer"
+    },
+    "tip": {
+      "model": "tip",
+      "via": "sred_1_vtor"
+    },
+    "kolvo_komnat": {
+      "model": "kolvo-komnat",
+      "via": "sred_arifm"
+    },
+    "rajon": {
+      "via": "sred_1_vtors",
+      "model": "rajon"
+    }
+  }
+}

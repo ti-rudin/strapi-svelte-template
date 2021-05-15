@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sred-kvadrs",
+      "handler": "sred-kvadr.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sred-kvadrs/count",
+      "handler": "sred-kvadr.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sred-kvadrs/:id",
+      "handler": "sred-kvadr.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sred-kvadrs",
+      "handler": "sred-kvadr.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sred-kvadrs/:id",
+      "handler": "sred-kvadr.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sred-kvadrs/:id",
+      "handler": "sred-kvadr.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

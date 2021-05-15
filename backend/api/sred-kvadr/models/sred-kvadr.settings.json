@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sred_kvadrs",
+  "info": {
+    "name": "sred_kvadr"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "value": {
+      "type": "biginteger"
+    },
+    "tip": {
+      "model": "tip",
+      "via": "sred_kvadr"
+    },
+    "kolvo_komnat": {
+      "model": "kolvo-komnat",
+      "via": "sred_kvadr"
+    },
+    "bad_kvartirs": {
+      "type": "integer"
+    },
+    "rajon": {
+      "via": "sred_kvadrs",
+      "model": "rajon"
+    }
+  }
+}

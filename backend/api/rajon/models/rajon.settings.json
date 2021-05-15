@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rajons",
+  "info": {
+    "name": "rajon"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "sred_1_vtors": {
+      "collection": "sred1vtor",
+      "via": "rajon"
+    },
+    "sred_kvadrs": {
+      "collection": "sred-kvadr",
+      "via": "rajon"
+    },
+    "kvartira": {
+      "via": "rajon",
+      "model": "kvartira"
+    }
+  }
+}

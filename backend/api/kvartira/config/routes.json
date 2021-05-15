@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kvartiras",
+      "handler": "kvartira.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kvartiras/count",
+      "handler": "kvartira.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kvartiras/:id",
+      "handler": "kvartira.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kvartiras",
+      "handler": "kvartira.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kvartiras/:id",
+      "handler": "kvartira.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kvartiras/:id",
+      "handler": "kvartira.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

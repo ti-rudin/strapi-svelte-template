@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kolvo-komnats",
+      "handler": "kolvo-komnat.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kolvo-komnats/count",
+      "handler": "kolvo-komnat.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kolvo-komnats/:id",
+      "handler": "kolvo-komnat.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kolvo-komnats",
+      "handler": "kolvo-komnat.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kolvo-komnats/:id",
+      "handler": "kolvo-komnat.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kolvo-komnats/:id",
+      "handler": "kolvo-komnat.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
